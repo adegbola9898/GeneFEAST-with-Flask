@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Upload FEA Files</title>
+</head>
+<body>
+    <h2>Upload FEA Files</h2>
+    <form action="https://my-genefeast-flask-i44asovekq-uc.a.run.app/upload" method="post" enctype="multipart/form-data">
+        <label for="fea_results_file">FEA Results File:</label>
+        <input type="file" id="fea_results_file" name="fea_results_file" required><br><br>
+
+        <label for="genes_of_interest_file">Genes of Interest File:</label>
+        <input type="file" id="genes_of_interest_file" name="genes_of_interest_file" required><br><br>
+
+        <label for="yaml_config_file">YAML Config File:</label>
+        <input type="file" id="yaml_config_file" name="yaml_config_file" required><br><br>
+
+        <label for="meta_input_file">Meta Input File:</label>
+        <input type="file" id="meta_input_file" name="meta_input_file" required><br><br>
+
+        <input type="submit" value="Upload">
+    </form>
+</body>
+</html>
